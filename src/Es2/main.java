@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("inserire un numero intero compreso tra 1 e 3");
+        System.out.println("inserire un numero intero compreso tra 0 e 3");
         int numero = Integer.parseInt(scanner.nextLine());
         stampaIntero(numero);
 
@@ -19,10 +19,11 @@ public class main {
             case 2:
                 System.out.println("due");
                 break;
-
-
             case 1:
                 System.out.println("uno");
+                break;
+            case 0:
+                System.out.println("zero");
                 break;
             default:
                 System.out.println("numero non valido!");
