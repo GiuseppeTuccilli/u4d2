@@ -11,11 +11,15 @@ public class main {
         while (!stringa.equals(":q")) {
             System.out.println("inserire una stringa, inserire :q per terminare:");
             stringa = scanner.nextLine();
+            if (stringa.equals(":q")) {
+                break;
+            }
             for (int i = 0; i < stringa.length() - 1; i++) {
                 stringaSep = stringaSep + stringa.charAt(i) + ",";
             }
             stringaSep = stringaSep + stringa.charAt(stringa.length() - 1);
             System.out.println(stringaSep);
+            stringaSep = "";
 
         }
 
